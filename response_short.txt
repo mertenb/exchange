@@ -1,0 +1,90 @@
+{
+    
+    "value": [
+        {
+            "idText": "C_1001_M_001",
+            "name": "Bezug Standard",
+            "conceptType_code": "MODEL",
+            "division_code": "EL",
+            "measurementClass": {
+                "idText": "C_1001",
+                "name": "1 N - 1 VB, 1 Netz",
+                "classType_code": "CLASS",
+                "division_code": "EL",
+                "meteringLocations": [
+                    {
+                        "type_code": "GRIDMES",
+                        "meteringTasks": [
+                            {
+                                "type_code": "AE",
+                                "direction_code": "OUT",
+                                "meteringProcedures": [
+                                    {
+                                        "meteringProcedure_code": "SLP"
+                                    }, ...
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "actors": [
+                    {
+                        "idText": "Netz",
+                        "type_code": "GRID",
+                        "direction_code": "BOTH",
+                    }, ...
+                   
+                ]
+            },
+            "marketLocations": [
+                {
+                    "idText": "VB",
+                    "type_code": "SUPPLY",
+                    "virtualMarketLocation": null,
+                    "direction_code": "OUT",
+                    "actorsMapping": [
+                        {
+                            "actorIdText": "VB",
+                            "actorDirection_code": "OUT",
+                            "actorType_code": "CONSUMER",
+                            "actor": {
+                                "idText": "VB",
+                                "type_code": "CONSUMER",
+                                "direction_code": "OUT",
+                            }
+                        }
+                    ],
+                    "calculationRules": [
+                        {
+                            "meteringProcedure_code": "SLP",
+                            "registerCode": "1.8",
+                            "formula": {
+                                "expression": "Z1B",
+                                "formulaSteps": [
+                                    ...
+                                ]
+                            },
+                            "usages": [
+                                {
+                                    "calculationRule_id": "acdc816f-7e4f-4b1d-a41b-534354185b9b",
+                                    "usage_code": "GRIDUSE",
+                                    "position": null
+                                }, ...
+                               
+                            ]
+                        }, ... SLP ....
+                       
+                    ]
+                }
+            ],
+            "modelOperands": [
+                {
+                    "operand": "Z1B",
+                    "meteringTaskType_code": "AE",
+                    "meteringTaskDirection_code": "OUT",
+                    "meteringLocationIdText": "Z1",
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,257 @@
+{
+    "@context": "$metadata#MeasurementConceptModels(measurementClass(meteringLocations(meteringTasks(meteringProcedures())),actors()),marketLocations(actorsMapping(actor()),calculationRules(formula(formulaSteps()),usages())),modelOperands())",
+    "@metadataEtag": "W/\"4eccc615f9e079e0ad2b2ffe4696fed67507a1b44d151e8228a975bb2d481b26\"",
+    "value": [
+        {
+            "id": "5355a41a-da2b-45a4-ad26-0ca007eb1605",
+            "modifiedAt": "2023-10-26T06:21:48Z",
+            "createdAt": "2022-11-19T14:56:15Z",
+            "idText": "C_1001_M_001",
+            "name": "Bezug Standard",
+            "description": null,
+            "conceptType_code": "MODEL",
+            "measurementClass_id": "4f551f29-57e2-4836-bf46-6e2a02ea648e",
+            "status_code": "ACTIVE",
+            "validFrom": "2022-11-19",
+            "validTo": "9999-12-31",
+            "division_code": "EL",
+            "version": null,
+            "measurementClass": {
+                "id": "4f551f29-57e2-4836-bf46-6e2a02ea648e",
+                "idText": "C_1001",
+                "name": "1 N - 1 VB, 1 Netz",
+                "description": "",
+                "classType_code": "CLASS",
+                "division_code": "EL",
+                "version": null,
+                "meteringLocations": [
+                    {
+                        "id": "de87dd7f-2216-4f8c-81f4-440930ac8bb4",
+                        "measurementConceptClass_id": "4f551f29-57e2-4836-bf46-6e2a02ea648e",
+                        "idText": "Z1",
+                        "type_code": "GRIDMES",
+                        "description": null,
+                        "optional": false,
+                        "repeatable": false,
+                        "position": null,
+                        "meteringTasks": [
+                            {
+                                "id": "4bc43c92-a871-4174-a247-32acd05a098f",
+                                "meteringLocation_id": "de87dd7f-2216-4f8c-81f4-440930ac8bb4",
+                                "type_code": "AE",
+                                "direction_code": "OUT",
+                                "position": null,
+                                "meteringProcedures": [
+                                    {
+                                        "id": "0105edef-39ba-46b1-b005-435dddaafe6f",
+                                        "meteringTask_id": "4bc43c92-a871-4174-a247-32acd05a098f",
+                                        "meteringProcedure_code": "SLP"
+                                    },
+                                    {
+                                        "id": "28782258-c8c3-4f02-8015-5c96908410a6",
+                                        "meteringTask_id": "4bc43c92-a871-4174-a247-32acd05a098f",
+                                        "meteringProcedure_code": "RLM"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "actors": [
+                    {
+                        "id": "57cb81cd-d3a4-4ee4-87d4-baa246d90d17",
+                        "measurementConceptClass_id": "4f551f29-57e2-4836-bf46-6e2a02ea648e",
+                        "idText": "Netz",
+                        "type_code": "GRID",
+                        "optional": null,
+                        "repeatable": null,
+                        "direction_code": "BOTH",
+                        "position": null,
+                        "energySource_code": null,
+                        "powerRange_code": null
+                    },
+                    {
+                        "id": "2c10be7c-d1a8-4ede-acb3-19c99db4e71d",
+                        "measurementConceptClass_id": "4f551f29-57e2-4836-bf46-6e2a02ea648e",
+                        "idText": "VB",
+                        "type_code": "CONSUMER",
+                        "optional": null,
+                        "repeatable": null,
+                        "direction_code": "OUT",
+                        "position": null,
+                        "energySource_code": null,
+                        "powerRange_code": null
+                    }
+                ]
+            },
+            "marketLocations": [
+                {
+                    "id": "ab8ee0f2-67b1-4d2e-8725-95bd86c977c6",
+                    "idText": "VB",
+                    "measurementConceptModel_id": "5355a41a-da2b-45a4-ad26-0ca007eb1605",
+                    "type_code": "SUPPLY",
+                    "virtualMarketLocation": null,
+                    "direction_code": "OUT",
+                    "position": 0,
+                    "actorsMapping": [
+                        {
+                            "id": "31b39215-4dc7-4da0-98ab-59523039fae1",
+                            "marketLocation_id": "ab8ee0f2-67b1-4d2e-8725-95bd86c977c6",
+                            "actor_id": "2c10be7c-d1a8-4ede-acb3-19c99db4e71d",
+                            "actorIdText": "VB",
+                            "actorDirection_code": "OUT",
+                            "actorType_code": "CONSUMER",
+                            "position": null,
+                            "actor": {
+                                "id": "2c10be7c-d1a8-4ede-acb3-19c99db4e71d",
+                                "measurementConceptClass_id": "4f551f29-57e2-4836-bf46-6e2a02ea648e",
+                                "idText": "VB",
+                                "type_code": "CONSUMER",
+                                "optional": null,
+                                "repeatable": null,
+                                "direction_code": "OUT",
+                                "position": null,
+                                "energySource_code": null,
+                                "powerRange_code": null
+                            }
+                        }
+                    ],
+                    "calculationRules": [
+                        {
+                            "id": "acdc816f-7e4f-4b1d-a41b-534354185b9b",
+                            "marketLocation_id": "ab8ee0f2-67b1-4d2e-8725-95bd86c977c6",
+                            "meteringProcedure_code": "SLP",
+                            "formula_id": "f0000000-0000-0000-0000-000000000001",
+                            "registerCode": "1.8",
+                            "position": 0,
+                            "formula": {
+                                "id": "f0000000-0000-0000-0000-000000000001",
+                                "idText": "F0001",
+                                "expression": "Z1B",
+                                "position": 1,
+                                "expressionSubstituted": "Z1_1.8",
+                                "formulaSteps": [
+                                    {
+                                        "formula_id": "f0000000-0000-0000-0000-000000000001",
+                                        "step": 0,
+                                        "type": "var",
+                                        "value": "Z1.OUT",
+                                        "ref1": null,
+                                        "ref2": null,
+                                        "meteringTask_id": "4bc43c92-a871-4174-a247-32acd05a098f",
+                                        "meteringTask": {
+                                            "id": "4bc43c92-a871-4174-a247-32acd05a098f",
+                                            "meteringLocation_id": "de87dd7f-2216-4f8c-81f4-440930ac8bb4",
+                                            "type_code": "AE",
+                                            "direction_code": "OUT",
+                                            "position": null,
+                                            "meteringLocation": {
+                                                "id": "de87dd7f-2216-4f8c-81f4-440930ac8bb4",
+                                                "measurementConceptClass_id": "4f551f29-57e2-4836-bf46-6e2a02ea648e",
+                                                "idText": "Z1",
+                                                "type_code": "GRIDMES",
+                                                "description": null,
+                                                "optional": false,
+                                                "repeatable": false,
+                                                "position": null
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "usages": [
+                                {
+                                    "id": "724c4b4c-a031-47e3-96ea-95bf08e03b11",
+                                    "calculationRule_id": "acdc816f-7e4f-4b1d-a41b-534354185b9b",
+                                    "usage_code": "GRIDUSE",
+                                    "position": null
+                                },
+                                {
+                                    "id": "be882475-a589-4bc6-ba2a-436d2ad06f1d",
+                                    "calculationRule_id": "acdc816f-7e4f-4b1d-a41b-534354185b9b",
+                                    "usage_code": "OUBILL",
+                                    "position": null
+                                },
+                                {
+                                    "id": "f2ef2e12-7ceb-4d61-b26e-a74b36d14989",
+                                    "calculationRule_id": "acdc816f-7e4f-4b1d-a41b-534354185b9b",
+                                    "usage_code": "SETTLE",
+                                    "position": null
+                                }
+                            ]
+                        },
+                        {
+                            "id": "e50ee4f5-16ec-4975-9580-2ae326a11072",
+                            "marketLocation_id": "ab8ee0f2-67b1-4d2e-8725-95bd86c977c6",
+                            "meteringProcedure_code": "RLM",
+                            "formula_id": "f0000000-0000-0000-0000-000000000001",
+                            "registerCode": "1.29",
+                            "position": 1,
+                            "formula": {
+                                "id": "f0000000-0000-0000-0000-000000000001",
+                                "idText": "F0001",
+                                "expression": "Z1B",
+                                "position": 1,
+                                "expressionSubstituted": "Z1_1.29",
+                                "formulaSteps": [
+                                    {
+                                        "formula_id": "f0000000-0000-0000-0000-000000000001",
+                                        "step": 0,
+                                        "type": "var",
+                                        "value": "Z1.OUT",
+                                        "ref1": null,
+                                        "ref2": null,
+                                        "meteringTask_id": "4bc43c92-a871-4174-a247-32acd05a098f",
+                                        "meteringTask": {
+                                            "id": "4bc43c92-a871-4174-a247-32acd05a098f",
+                                            "meteringLocation_id": "de87dd7f-2216-4f8c-81f4-440930ac8bb4",
+                                            "type_code": "AE",
+                                            "direction_code": "OUT",
+                                            "position": null,
+                                            "meteringLocation": {
+                                                "id": "de87dd7f-2216-4f8c-81f4-440930ac8bb4",
+                                                "measurementConceptClass_id": "4f551f29-57e2-4836-bf46-6e2a02ea648e",
+                                                "idText": "Z1",
+                                                "type_code": "GRIDMES",
+                                                "description": null,
+                                                "optional": false,
+                                                "repeatable": false,
+                                                "position": null
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "usages": [
+                                {
+                                    "id": "27853b3b-8878-489e-bc50-6d061ce973f9",
+                                    "calculationRule_id": "e50ee4f5-16ec-4975-9580-2ae326a11072",
+                                    "usage_code": "SETTLE",
+                                    "position": null
+                                },
+                                {
+                                    "id": "17730fd8-d2e6-45f2-b192-3e183dbd4709",
+                                    "calculationRule_id": "e50ee4f5-16ec-4975-9580-2ae326a11072",
+                                    "usage_code": "GRIDUSE",
+                                    "position": null
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "modelOperands": [
+                {
+                    "id": "80886203-967f-4393-a40c-2fddfa914698",
+                    "measurementConceptModel_id": "5355a41a-da2b-45a4-ad26-0ca007eb1605",
+                    "operand": "Z1B",
+                    "meteringTask_id": "4bc43c92-a871-4174-a247-32acd05a098f",
+                    "meteringTaskType_code": "AE",
+                    "meteringTaskDirection_code": "OUT",
+                    "meteringLocationIdText": "Z1",
+                    "position": 0
+                }
+            ]
+        }
+    ]
+}
